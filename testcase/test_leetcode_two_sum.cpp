@@ -1,7 +1,7 @@
 #include "leetcode_two_sum.h"
 #include "gtest/gtest.h"
 
-TEST(TEST_CASE_LEETCODE_TWO_SUM, LEETCODE_TWO_SUM)
+TEST(TEST_CASE_LEETCODE_TWO_SUM, LEETCODE_TWO_SUM_A)
 {
 	vector<int> nums;
 	nums.push_back(2);
@@ -14,7 +14,7 @@ TEST(TEST_CASE_LEETCODE_TWO_SUM, LEETCODE_TWO_SUM)
 	results.push_back(1);
 	
 	vector<int> re;
-	re = twoSum(nums, target);
+	re = twoSumA(nums, target);
 	EXPECT_EQ(1, re[0]);
 	EXPECT_EQ(2, re[1]);
 }
